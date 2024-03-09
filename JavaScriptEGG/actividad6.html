@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 6 impar o par</title>
+</head>
+<body>
+    <h3>Verificador de numero impar o par</h3>
+    <input id="inputnumero" type="number" placeholder="Ingrese un numero">
+    <p id="resultado"></p>
+    <script>
+        var inputnumero = document.getElementById("inputnumero");
+        inputnumero.onkeypress = (event) => {
+            if(event.key === "Enter"){
+                if(inputnumero.value == ""){
+                    document.getElementById("resultado").textContent = "Ingrese un numero";
+                }
+                else if(inputnumero.value == "0"){
+                    document.getElementById("resultado").textContent = "El numero no es ni par ni impar";
+                }
+                else if((parseInt(inputnumero.value) % 2) == 0){
+                    document.getElementById("resultado").textContent = "El numero es par";
+                }
+                else{
+                    document.getElementById("resultado").textContent = "El numero es impar";
+                }
+            }
+        };
+    </script>
+</body>
+</html>

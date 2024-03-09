@@ -1,0 +1,16 @@
+*{
+    background-color: brown;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h1{
+    font-size: xx-large;
+    color: black;
+}
+p,li{
+    font-size: large;
+    color: black;
+}
+h2{
+    font-size: x-large;
+    color: black;
+}

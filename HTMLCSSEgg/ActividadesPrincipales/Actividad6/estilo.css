@@ -1,0 +1,8 @@
+.inputedad::-webkit-outer-spin-button,
+.inputedad::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin:0;
+}
+.fecha{
+    width:173px;
+}

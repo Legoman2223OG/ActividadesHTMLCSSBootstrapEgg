@@ -1,0 +1,17 @@
+table,th,td{
+    border: 1px solid;
+    border-collapse: collapse;
+    text-align: center;
+    border-color: hsl(0, 0%, 20%);
+}
+th[scope=col]{
+    background-color:lightgray;
+    text-align: center;
+}
+th[scope=row]{
+    text-align: left;
+    background-color:#E6F3FF;
+}
+tr:nth-child(2n){
+    background-color: #FFFFCC;
+}

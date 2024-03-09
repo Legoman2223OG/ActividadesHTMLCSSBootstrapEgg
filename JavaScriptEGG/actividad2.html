@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+crossorigin="anonymous">
+<title>Actividad 2</title>
+</head>
+<body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-
+DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-
+ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+crossorigin="anonymous"></script>
+<br>
+<div class="m-auto w-75 py-5 px-3 bg-light border border-dark rounded text-center">
+    <h2>Calculadora de area y perimetro de una circunferencia</h2>
+    <br>
+    <input type="number" id="radioinput" class="py-2 border rounded w-50" placeholder="     Ingrese el radio de la circunferencia">
+    <br>
+    <button type="button" id="calcularbtn" class="btn-light mt-4">Calcular</button>
+    <br>
+    <div class="mx-auto w-50 text-left">
+        <br>
+        <p id="area"><b>Area: </b></p>
+        <p id="perimetro"><b>Perimetro: </b></p>
+        <br>
+    </div>
+</div>
+<script>
+    var radioinput = document.getElementById("radioinput");
+    var calcularbtn = document.getElementById("calcularbtn");
+    var textarea= document.getElementById("area");
+    var textperimetro= document.getElementById("perimetro");
+    var calculo = function() {
+        if(radioinput.value == ""){
+            alert("Debe ingresar un valor numerico");
+        }
+        else{
+            textarea.innerHTML= `<b>Area: </b>${Math.PI * Math.pow(radioinput.value,2)}`;
+            textperimetro.innerHTML=`<b>Perimetro: </b>${2 * Math.PI * radioinput.value}`;
+        }
+    }
+    calcularbtn.onclick= calculo;
+</script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+#vin1{
+    color:red;
+    background-color: green;
+    border: black;
+    border-style: dashed;
+}
+#vin2{
+    background-color: aqua;
+    color: azure;
+}
+#vin3 img{
+    height:200px;
+    width:auto;
+}
+#vin3{
+    background-color: black;
+}
+#vin4 p{
+color:green;
+background-color: red;
+border: black;
+border-style:double;
+}
+#steam a{
+    text-decoration: none;
+}
+#steam a:link{
+    color:black;
+}
+#steam a:active{
+    color:black;
+}
+#steam a:hover{
+    color:white;
+}
+#steam a:visited{
+    color:black;
+}
+#pildorasinformaticas a{
+    text-decoration: none;
+}
+#pildorasinformaticas a:link{
+    color:green;
+}
+#pildorasinformaticas a:active{
+    color:green;
+}
+#pildorasinformaticas a:hover{
+    color:black;
+}
+#pildorasinformaticas a:visited{
+    color:green;
+}
+#brickadia a{
+    text-decoration: none;
+}
+#brickadia a:link{
+    color:red;
+}
+#brickadia a:active{
+    color:red;
+}
+#brickadia a:hover{
+    color:brown;
+}
+#brickadia a:visited{
+    color:red;
+}
+#google a{
+    text-decoration: none;
+}
+#google a:link{
+    color:yellow;
+}
+#google a:active{
+    color:blue;
+}
+#google a:hover{
+    color:red;
+}
+#google a:visited{
+    color:green;
+}

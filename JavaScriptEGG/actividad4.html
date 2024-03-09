@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 4</title>
+</head>
+<body>
+<div>
+    <input id="opcion" type="text" placeholder="Escriba S o N">
+    <br>
+    <button id="enviar">Enviar</button>
+    <p id="outputtext"></p>
+</div>
+<script>
+    var inputopcion= document.getElementById("opcion");
+    var texto= document.getElementById("outputtext");
+    var enviar = document.getElementById("enviar");
+    var outputfuncion= function(){
+        if(inputopcion.value == "S" || inputopcion.value == "N"){
+            texto.textContent="CORRECTO";
+        }
+        else{
+            texto.textContent="INCORRECTO";
+        }
+    };
+    enviar.onclick=outputfuncion;
+</script>
+</body>
+</html>

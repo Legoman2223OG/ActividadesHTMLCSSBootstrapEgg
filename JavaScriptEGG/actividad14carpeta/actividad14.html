@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="actividad14.css">
+</head>
+<body>
+    <table>
+        <tr>
+            <td id="crearlibro">
+                <div>
+                    <h2>Insertar libro</h2>
+                    <label for="isbn">ISBN: </label>
+                    <input id="isbn" min="0" name="isbn" type="number" placeholder="Ingrese el ISBN del libro">
+                    <br>
+                    <label for="titulo">Titulo: </label>
+                    <input id="titulo" name="titulo" type="text" placeholder="Ingrese el titulo del libro">
+                    <br>
+                    <label for="autor">Autor: </label>
+                    <input id="autor" name="autor" type="text" placeholder="Ingrese el autor del libro">
+                    <br>
+                    <label for="paginas">Paginas: </label>
+                    <input min="1" id="paginas" name="paginas" type="number" placeholder="Ingrese la cantidad de paginas del libro">
+                    <br>
+                    <button type="button" id="botonenviar">Enviar</button>
+                    <br>
+                    <p id="perrorisbn" hidden>El libro con ISBN <span id="errorisbn"></span> ya existe</p>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td id="listalibros">
+                <div id="ubicacionlibros">
+
+                </div>
+            </td>
+        </tr>
+    </table>
+    <script src="actividad14js.js"></script>
+</body>
+</html>
